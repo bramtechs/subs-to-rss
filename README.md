@@ -1,8 +1,8 @@
 # Subs to RSS
-A handy script that that converts your YouTube subscriptions into an RSS feed, so you don't end up down an endless rabbit hole of prehistoric house building video's.
+A handy script that that converts your YouTube subscriptions into an RSS feed, so you don't end up down an endless rabbit hole watching prehistoric house building video's.
 
 ## Automated method
-The following method assumes you have the following software.
+This method assumes you have the following software:
 
 - GNU/Linux (tested on Ubuntu 22.04)
 - gnome-terminal (feel free to pull request your own)

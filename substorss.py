@@ -12,4 +12,5 @@ os.system("gnome-terminal -- sensible-editor channels.txt")
 
 input("Press ENTER when you're done.")
 
+os.mkdir("out")
 listtorss.convert("channels.txt","out/subscriptions.opml")
