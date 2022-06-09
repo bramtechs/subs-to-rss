@@ -14,7 +14,7 @@ Run the following bash command.
 cd ~/Downloads && \
 git clone "https://github.com/bramtechs/subs-to-rss" && \
 cd subs-to-rss && \
-python substorss.py
+python3 substorss.py
 ```
 Follow the instructions outputted to your terminal and read **Final steps**.
 
