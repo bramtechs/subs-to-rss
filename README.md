@@ -39,4 +39,4 @@ Import the newly created OPML file into a RSS reader, like Newsboat or Thunderbi
 [ubuntubuzz.com - How To Import OPML of RSS Feeds in Thunderbird ](https://www.ubuntubuzz.com/2017/04/how-to-import-opml-of-rss-feeds-in-thunderbird.html)
 
 ## Notice
-Running any of my programs is at your own risk. I'm am not responsible for breaking/exploding your computer.
+Running any of my programs is at your own risk. I am not responsible for breaking/exploding your computer.
