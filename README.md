@@ -1,11 +1,13 @@
 # Subs to RSS
 A handy script that that converts your YouTube subscriptions into an RSS feed, so you don't end up down an endless rabbit hole watching prehistoric house building video's.
 
-## Automated method
-This method assumes you have the following software:
 
+## Automated method
+
+### Linux
+This method assumes you have the following software:
 - GNU/Linux (tested on Ubuntu 22.04)
-- gnome-terminal (feel free to pull request your own)
+- gnome-terminal (modify substorss.py to change)
 - A browser: Chrome, Firefox or derivatives
 - git: for cloning this repo
 
@@ -18,7 +20,25 @@ python3 substorss.py
 ```
 Follow the instructions outputted to your terminal and read **Final steps**.
 
-## Manual method
+### Windows
+This method assumes you have the following software:
+- git: for cloning this repo
+- python3
+
+> *Tip: use [Chocolatey](https://chocolatey.org/) or [Winget](https://docs.microsoft.com/en-us/windows/package-manager/winget/) to install software easily!*
+> ```choco install python git -a```
+
+Run the following powershell command.
+```powershell
+$ErrorActionPreference = "Stop"
+cd ~/Downloads
+git clone "https://github.com/bramtechs/subs-to-rss"
+cd subs-to-rss
+python3 substorss.py
+```
+Follow the instructions outputted to your PowerShell window and read **Final steps**.
+
+## Manual method (cross-platform)
 
 1) Go to https://www.youtube.com/feed/channels in your browser
 
