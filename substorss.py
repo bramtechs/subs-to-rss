@@ -13,6 +13,6 @@ if os.name == 'nt': # Windows NT
 else:
     os.system("gnome-terminal -- sensible-editor channels.txt")
 
-input("Press ENTER when you're done.")
+input("Press ENTER when you edited AND SAVED the file.")
 
 listtorss.convert("channels.txt","subscriptions.opml")

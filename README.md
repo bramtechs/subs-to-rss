@@ -1,7 +1,6 @@
 # Subs to RSS
 A handy script that that converts your YouTube subscriptions into an RSS feed, so you don't end up down an endless rabbit hole watching prehistoric house building video's.
 
-
 ## Automated method
 
 ### Linux
@@ -10,12 +9,14 @@ This method assumes you have the following software:
 - gnome-terminal (modify substorss.py to change)
 - A browser: Chrome, Firefox or derivatives
 - git: for cloning this repo
+- python-pip
 
 Run the following bash command.
 ```bash
 cd ~/Downloads && \
 git clone "https://github.com/bramtechs/subs-to-rss" && \
 cd subs-to-rss && \
+pip install requests --user && \
 python3 substorss.py
 ```
 Follow the instructions outputted to your terminal and read **Final steps**.
@@ -23,7 +24,7 @@ Follow the instructions outputted to your terminal and read **Final steps**.
 ### Windows
 This method assumes you have the following software:
 - git: for cloning this repo
-- python3
+- python3 with pip
 
 > *Tip: use [Chocolatey](https://chocolatey.org/) or [Winget](https://docs.microsoft.com/en-us/windows/package-manager/winget/) to install software easily!*
 > ```choco install python git -a```
@@ -34,7 +35,8 @@ $ErrorActionPreference = "Stop"
 cd ~/Downloads
 git clone "https://github.com/bramtechs/subs-to-rss"
 cd subs-to-rss
-python3 substorss.py
+pip install requests --user
+python substorss.py
 ```
 Follow the instructions outputted to your PowerShell window and read **Final steps**.
 
@@ -54,7 +56,7 @@ python3 list-rss.py channels.txt
 ```
 
 ## Final steps
-Import the newly created OPML file into a RSS reader, like Newsboat or Thunderbird.
+Import the newly created OPML file ```~/Downloads/subs-to-rss/subscriptions.opml``` into an RSS reader, like Newsboat or Thunderbird.
 ![Thunderbird](thunderbird.png)
 [ubuntubuzz.com - How To Import OPML of RSS Feeds in Thunderbird ](https://www.ubuntubuzz.com/2017/04/how-to-import-opml-of-rss-feeds-in-thunderbird.html)
 
