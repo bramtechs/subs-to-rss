@@ -6,7 +6,6 @@ A handy script that that converts your YouTube subscriptions into an RSS feed, s
 ### Linux
 This method assumes you have the following software:
 - GNU/Linux (tested on Ubuntu 22.04)
-- gnome-terminal (modify substorss.py to change)
 - A browser: Chrome, Firefox or derivatives
 - git for cloning this repo
 - python-pip

@@ -9,6 +9,10 @@ def get_channel_name(url: str) -> str:
     start = xml.find("<author>")+len("<author>\n..<name>") # crap
     stop = xml.find("</name>")
     name = xml[start:stop].replace('\'',"") # remove dangerous apostrophes
+    if "Error 404 (Not Found)" in name:
+        return None
+    if "Loading..." in name:
+        return None
     return name
 
 def convert(path: str, out: str):
@@ -27,6 +31,8 @@ def convert(path: str, out: str):
         if (line == ""):
             continue
         name = get_channel_name(line)
+        if name == None:
+            continue
         print(name)
         outlines += "<outline title='%s' text='%s' type='rss' xmlUrl='%s'/>\n"%(name,name,line)
     
