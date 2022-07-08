@@ -51,7 +51,7 @@ javascript:if("https://www.youtube.com/feed/channels"==window.location.href){let
 4) Save the outputted list to a file and pass it down to the following script.
 
 ```bash
-python3 list-rss.py channels.txt
+python3 listtorss.py channels.txt
 ```
 
 ## Final steps
