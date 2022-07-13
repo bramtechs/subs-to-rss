@@ -5,7 +5,11 @@ import requests
 import os
 
 def get_channel_name(url: str) -> str:
-    xml = requests.get(url).text
+    try:
+        xml = requests.get(url).text
+    except:
+        print("--> Failed to get channel name!")
+        return None
     start = xml.find("<author>")+len("<author>\n..<name>") # crap
     stop = xml.find("</name>")
     name = xml[start:stop].replace('\'',"") # remove dangerous apostrophes
