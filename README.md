@@ -1,4 +1,4 @@
-# Subs to RSS
+# Subs to RSS (BROKEN)
 A handy script that that converts your YouTube subscriptions into an RSS feed, so you don't end up down an endless rabbit hole watching prehistoric house building videos.
 
 ## Automated method
